@@ -1,9 +1,15 @@
 import { useState, useEffect, useRef } from "react";
+import img1 from "./assets/1.jpeg";
+import img2 from "./assets/2.jpeg";
+import img3 from "./assets/3.jpeg";
+import img4 from "./assets/4.jpeg";
+import img5 from "./assets/5.jpeg";
+import img6 from "./assets/6.jpeg";
  
 const memories = [
   {
     id: 1,
-    image: "src/assets/1.jpeg",
+    image: img1,
     title: "Our First Date",
     date: "15 January 2026",
     location: "Chittagong",
@@ -11,7 +17,7 @@ const memories = [
   },
   {
     id: 2,
-    image: "src/assets/2.jpeg",
+    image: img2,
     title: "Me and My Forever 💖",
     date: "January 2026",
     location: "Chittagong",
@@ -19,7 +25,7 @@ const memories = [
   },
   {
     id: 3,
-    image: "src/assets/3.jpeg",
+    image: img3,
     title: "Selfie with my Chinese",
     date: "January 2026",
     location: "Patenga Beach",
@@ -27,7 +33,7 @@ const memories = [
   },
   {
     id: 4,
-    image: "src/assets/4.jpeg",
+    image: img4,
     title: "Just us…",
     date: "January 2026",
     location: "Patenga Beach",
@@ -35,7 +41,7 @@ const memories = [
   },
   {
     id: 5,
-    image: "src/assets/5.jpeg",
+    image: img5,
     title: "Just perfect",
     date: "Special Day 2026",
     location: "Patenga Beach",
@@ -43,7 +49,7 @@ const memories = [
   },
   {
     id: 6,
-    image: "src/assets/6.jpeg",
+    image: img6,
     title: "My everything.",
     date: "My Best Day In Life",
     location: "Patenga Beach",
