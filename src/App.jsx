@@ -583,7 +583,7 @@ export default function App() {
           <h1 className="hero-title">Happy Birthday<br/> My Noha</h1>
           <p className="hero-subtitle">My Future Lawyer 💖</p>
           <p className="hero-desc">
-            Hey <i><b>Noha</b></i> , you are the dream I never knew my heart was waiting for... On your special day, I just want to remind you how deeply you’ve filled my life with love, unforgettable memories. You’re not just part of my world..... you are the light that makes everything brighter. Being with you is the most beautiful gift I’ve ever known. I cherish you more with every heartbeat. 💫
+            Hey <i><b>Noha</b></i> , you are the dream I never knew my heart was waiting for... On your special day, I just want to remind you how deeply you’ve filled my life with love, unforgettable memories. You’re not just part of my world,you are the light that makes everything brighter. Being with you is the most beautiful gift I’ve ever known. I cherish you more with every heartbeat. 💫
           </p>
           <p className="cake-hint">✦ Drag or touch to spin the cake ✦</p>
           <div className="cake-wrap">
