@@ -3,50 +3,50 @@ import { useState, useEffect, useRef } from "react";
 const memories = [
   {
     id: 1,
-    image: "https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "src/assets/1.jpeg",
     title: "Our First Date",
-    date: "Summer 2023",
-    location: "Central Park",
-    description: "The day everything changed. Coffee, laughter, and the beginning of us.",
+    date: "15 January 2026",
+    location: "Chittagong",
+    description: "Me and you — that’s all I need. Noha..",
   },
   {
     id: 2,
-    image: "https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg?auto=compress&cs=tinysrgb&w=800",
-    title: "Beach Sunset",
-    date: "August 2023",
-    location: "Santa Monica Beach",
-    description: "Watching the sun go down, I knew I had found someone special.",
+    image: "src/assets/2.jpeg",
+    title: "Me and My Forever 💖",
+    date: "January 2026",
+    location: "Chittagong",
+    description: "I found my forever in a single moment with you..",
   },
   {
     id: 3,
-    image: "https://images.pexels.com/photos/2259917/pexels-photo-2259917.jpeg?auto=compress&cs=tinysrgb&w=800",
-    title: "Road Trip Adventures",
-    date: "Fall 2023",
-    location: "Pacific Coast Highway",
-    description: "Singing along to our favorite songs, windows down, hearts full.",
+    image: "src/assets/3.jpeg",
+    title: "Selfie with my Chinese",
+    date: "January 2026",
+    location: "Patenga Beach",
+    description: "Life feels perfect with you.",
   },
   {
     id: 4,
-    image: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=800",
-    title: "Cozy Movie Nights",
-    date: "Winter 2023",
-    location: "Our Favorite Spot",
+    image: "src/assets/4.jpeg",
+    title: "Just us…",
+    date: "January 2026",
+    location: "Patenga Beach",
     description: "Every moment with you feels like a beautiful scene from a movie.",
   },
   {
     id: 5,
-    image: "https://images.pexels.com/photos/1173777/pexels-photo-1173777.jpeg?auto=compress&cs=tinysrgb&w=800",
-    title: "Dancing Together",
-    date: "New Year 2024",
-    location: "City Lights",
-    description: "Under the stars, dancing like no one was watching.",
+    image: "src/assets/5.jpeg",
+    title: "Just perfect",
+    date: "Special Day 2026",
+    location: "Patenga Beach",
+    description: "A day filled with love, laughter, and unforgettable moments.",
   },
   {
     id: 6,
-    image: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
-    title: "Morning Coffee",
-    date: "Every Day",
-    location: "Our Little World",
+    image: "src/assets/6.jpeg",
+    title: "My everything.",
+    date: "My Best Day In Life",
+    location: "Patenga Beach",
     description: "The simple moments that mean everything to me.",
   },
 ];
@@ -171,7 +171,7 @@ function Cake3D() {
  
       // Candles
       const candleColors = ["#FF6F00", "#6A1B9A", "#1565C0", "#2E7D32", "#C62828"];
-      [-45, -22, 0, 22, 45].forEach((off, i) => {
+      [ -22, 0, 22].forEach((off, i) => {
         drawCandle(cx + off, 75, candleColors[i]);
       });
  
@@ -392,13 +392,17 @@ export default function App() {
       box-shadow: 0 12px 48px rgba(233,30,140,0.22);
     }
     .card-img-wrap {
-      position: relative; overflow: hidden;
-      aspect-ratio: 4/3;
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f8f8;
     }
     .card-img-wrap img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 0.5s ease;
-      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
     .card:hover .card-img-wrap img { transform: scale(1.1); }
     .card-overlay {
@@ -470,6 +474,7 @@ export default function App() {
       line-height: 1.6;
     }
     .hearts-row {
+      color : red;
       display: flex; justify-content: center; gap: 10px;
       margin-top: 28px;
     }
@@ -512,7 +517,7 @@ export default function App() {
       box-shadow: 0 24px 80px rgba(136,14,79,0.4);
       text-align: left;
     }
-    .modal-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .modal-img { width: 100%; aspect-ratio: 16/9; object-fit: contain; display: block; }
     .modal-body { padding: 28px; }
     .modal-title { font-family: 'Playfair Display', serif; font-size: 26px; color: #880E4F; margin-bottom: 8px; }
     .modal-meta { font-size: 13px; color: #C2185B; opacity: 0.75; margin-bottom: 14px; }
@@ -568,13 +573,11 @@ export default function App() {
  
         {/* HERO */}
         <section className={`hero fade-up ${visible ? "show" : ""}`}>
-          <div className="date-badge">✦ 26th April ✦</div>
-          <h1 className="hero-title">Happy Birthday</h1>
+          <div className="date-badge">✦ 26th April ✦<br/> Shurfaat Newaz Noha's Day</div>
+          <h1 className="hero-title">Happy Birthday<br/> My Noha</h1>
           <p className="hero-subtitle">My Future Lawyer 💖</p>
           <p className="hero-desc">
-            Every moment with you is a precious gift. On your special day, I want to
-            celebrate all the beautiful memories we've created and all the love we
-            share. You make my world infinitely brighter.
+            Hey <i><b>Noha</b></i> , you are the dream I never knew my heart was waiting for... On your special day, I just want to remind you how deeply you’ve filled my life with love, unforgettable memories. You’re not just part of my world you are the light that makes everything brighter. Being with you is the most beautiful gift I’ve ever known. I cherish you more with every heartbeat. 💫
           </p>
           <p className="cake-hint">✦ Drag or touch to spin the cake ✦</p>
           <div className="cake-wrap">
@@ -591,7 +594,7 @@ export default function App() {
  
         {/* MEMORIES */}
         <section className={`memories-section fade-up ${visible ? "show" : ""}`} style={{ transitionDelay: "0.2s" }}>
-          <h2 className="section-title">Our Memories</h2>
+          <h2 className="section-title">You & Me</h2>
           <p className="section-sub">A collection of moments that make my heart smile ♥</p>
           <div className="grid">
             {memories.map((m) => (
@@ -603,8 +606,8 @@ export default function App() {
                 <div className="card-body">
                   <div className="card-title">{m.title}</div>
                   <div className="card-meta">
-                    <span>🗓 {m.date}</span>
-                    <span>📍 {m.location}</span>
+                    {/* <span>🗓 {m.date}</span>
+                    <span>📍 {m.location}</span> */}
                   </div>
                 </div>
               </div>
@@ -625,17 +628,21 @@ export default function App() {
             <span className="message-icon">💖</span>
             <h2 className="message-title">A Message From My Heart</h2>
             <p className="message-p">
-              On your birthday, I want you to know that you are the most amazing person
-              I've ever met. Your smile lights up my world, your laugh is my favorite sound,
-              and your love is the greatest gift I've ever received.
+              We’ve known each other since childhood and now here we are together ....now you mean everything to me. ❤️
+I know today is so special for you and it hurts me that I can’t be there beside you to celebrate the way you deserve. But In sha Allah, from next year and every year I’ll be right there with you on all your special days.
+I know life hasn’t been easy for you lately and I truly pray for your good health, peace and a life full of happiness…... of course, with me in it 😄 I promise I’ll always be there for you everywhere, every time, especially when you need me the most.
+Every moment with you feels like a precious gift. On your special day, I just want to remind you how much you mean to me. You make my world so much brighter, so much warmer and so much more beautiful just by being in it....i love you so much Noha.
+
+
+
             </p>
             <p className="message-p">
-              I'm so proud of you and everything you've accomplished. Your brilliance,
+              {/* I'm so proud of you and everything you've accomplished. Your brilliance,
               your passion for law, and your kind heart inspire me every single day.
-              I can't wait to see all the incredible things you'll achieve as a lawyer.
+              I can't wait to see all the incredible things you'll achieve as a lawyer. */}
             </p>
             <p className="message-quote">
-              "Happy Birthday, my love. Here's to us and many more beautiful memories together."
+              "Happy Birthday, my love Noha.🎂💖<br/>Here’s to celebrating not just this one, but an endless number of birthdays together—year after year—until the very end of our life, side by side"
             </p>
             <div className="hearts-row">
               <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
@@ -645,7 +652,7 @@ export default function App() {
  
         {/* FOOTER */}
         <footer className="footer">
-          Made with ♥ for the most special person in my world
+          Made with ♥ for the most special person in my world. <br/>I love you, Noha. Happy Birthday again! - rf104🎉
         </footer>
  
         {/* MODAL */}
